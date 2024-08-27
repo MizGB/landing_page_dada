@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Grid } from "@mui/material";
+import NavBar from "./components/NavBar/index";
+import FirstSection from "./components/FirstSection/index";
+import BannerImagerSlider from "./components/BannerImagerSlider/index";
+import InstructorsSection from "./components/InstructorsSection";
+import OurGoalsSection from "./components/OurGoalsSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container direction="column">
+      <NavBar />
+      <FirstSection />
+      <BannerImagerSlider />
+      <OurGoalsSection />
+      <InstructorsSection />
+    </Grid>
   );
 }
 
